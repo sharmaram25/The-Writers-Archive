@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom layer for glassmorphism utilities */
+@layer components {
+  .glass-panel {
+    /* Light: warm parchment glass; Dark: deep blue glass */
+    @apply backdrop-blur-md rounded-glass border shadow-vintage
+           bg-white/65 border-ink/10 text-ink/90
+           dark:bg-deepblue/40 dark:border-white/10 dark:shadow-glass dark:text-parchment/90;
+  }
+  .glass-button {
+    @apply px-4 py-2 rounded-full backdrop-blur-md text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed
+           bg-white/70 border border-ink/10 text-ink hover:bg-white/85 shadow-vintage
+           dark:bg-deepblue/50 dark:border-white/10 dark:text-neutral-100 dark:hover:bg-deepblue/60 dark:shadow-glass;
+  }
+  .text-gradient-gold {
+    background: linear-gradient(90deg,#b08947,#d1b280,#f5f0e6);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Paper surface utility for vintage cards/blocks in light mode */
+  .paper-surface {
+    @apply bg-parchment/80 border border-sepia/10 rounded-glass shadow-vintage relative overflow-hidden;
+  }
+  .paper-surface:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    /* subtle paper grain using radial + linear mix */
+    background-image:
+      radial-gradient(1000px 600px at 50% -10%, rgba(176,137,71,0.06), transparent 60%),
+      radial-gradient(800px 400px at 120% 10%, rgba(90,70,48,0.05), transparent 60%),
+      repeating-linear-gradient(90deg, rgba(0,0,0,0.02), rgba(0,0,0,0.02) 2px, transparent 2px, transparent 4px);
+    opacity: .8;
+  }
+}
