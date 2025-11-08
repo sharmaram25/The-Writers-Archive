@@ -1,0 +1,13 @@
+<!-- This is a temporary placeholder. In production, you would convert the SVG to PNG -->
+<!-- For now, the browser will use the SVG favicon which is supported by modern browsers -->
+<!-- To create PNG versions, you can use online tools like favicon.io or realfavicongenerator.net -->
+<!-- Upload the SVG and it will generate all required sizes: 16x16, 32x32, 48x48, etc. -->
+
+<!-- Recommended PNG sizes to generate:
+- favicon-16x16.png
+- favicon-32x32.png  
+- favicon-48x48.png
+- apple-touch-icon.png (180x180)
+- android-chrome-192x192.png
+- android-chrome-512x512.png
+-->
