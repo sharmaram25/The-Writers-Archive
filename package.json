@@ -1,12 +1,23 @@
 {
   "name": "writers-archive",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "An elegant, emotionally immersive digital sanctuary for showcasing personal Shayari (poetry)",
+  "author": "Ram Sharma <sharmaram2504@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sharmaram25/The-Writers-Archive.git"
+  },
+  "homepage": "https://writers-archive.netlify.app",
+  "keywords": ["react", "poetry", "shayari", "glassmorphism", "supabase", "vite"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "echo \"Linting not configured yet\"",
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.1",
